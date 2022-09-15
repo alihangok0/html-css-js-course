@@ -1,0 +1,63 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Personel Alım Ekranı</title>
+    <style>
+        table td {
+            border: 2px solid brown;
+        }
+
+        table th {
+            border: 2px solid brown;
+        }
+    </style>
+</head>
+<body>
+<form action="div.html" method="get">
+    <fieldset style="border: solid black; width: 320px; height: 100%;">
+        <legend>Başvuru Bilgileri</legend>
+        <input type="text" name="adgiris" placeholder="Adınızı Giriniz"><br><br>
+        <input type="text" name="soyadgiris" placeholder="Soyadınızı Giriniz"><br><br>
+        <input type="number" name="tel" placeholder="Telefon Numaranız"><br><br>
+        <input type="number" name="maasbeklentisi" placeholder="Maaş beklentinizi yazınız"><br><br>
+        <p><b>İş yerine yakın bir yerde oturuyor musunuz?</b></p>
+        <input type="radio" name="sec" id="sec1"><label for="sec1">Evet</label>
+        <input type="radio" name="sec" id="sec2"><label for="sec2">Hayır</label><br><br>
+        <textarea style="height: 200px; width: 100%;" name="adres"
+                  placeholder="Cevabınız evet ise ev adresinizi buraya giriniz"></textarea><br><br>
+        <p><b>Uzaktan Çalışmayı düşünür müsünüz?</b></p>
+        <sub>Cevabınız fark etmez ise iki seçeneğide işaretleyin</sub><br><br>
+        <input type="checkbox" name="tercih1" id="ter1"><label for="ter1">Uzaktan çalışırım</label><br>
+        <input type="checkbox" name="tercih2" id="ter2"><label for="ter1">İşyerinde çalışırım</label><br><br>
+        <select name="ulasimimkani">
+            <option>İş Merkezine Ulaşım İmkanınız</option>
+            <option value="arac">Şahsi Araç</option>
+            <option value="sehiriciaktar">Şehir İçi Aktarım</option>
+        </select><br><br>
+        <p><b>Mülakata Katılabileceğiniz tarihi ve saati seçiniz</b></p>
+        <input type="datetime-local" name="mulakat"><br><br>
+        <table>
+            <thead>
+            <tr>
+                <th>Hafta içi çalışma saatleri</th>
+                <th>Hafta sonu çalışma saatleri</th>
+            </tr>
+            </thead>
+            <tbody>
+            <tr>
+                <td>09.00 - 18.00</td>
+                <td>Cumartesi: 09.00 - 13.00 / Pazar günü tatil</td>
+            </tr>
+            </tbody>
+        </table>
+        <br><br>
+        <button type="submit" name="gonder">Gönder</button>
+        <button type="reset">Sıfırla</button>
+    </fieldset>
+</form>
+</body>
+</html>

@@ -1,0 +1,62 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Bu benim besinci sayfam</title>
+</head>
+<body style="padding-bottom: 500px;">
+    <form action="ders_4.html" method="post"> <!-- method'u post yaptığımızda yazdıklarımızın hepsi bir paket haline getirilir ve action kımında yazdığımız uzantıya yollanır ancak Get dersek bu sefer yazdıklarımız URL şeklinde link olarak uzantıya gider -->
+        <input type="text" name="username" placeholder="Kullanıcı adınızı giriniz" ><br><br> <!-- value="Kullanıcı adı" diyerek değer atıyabiliyoruz-->
+        <input type="password" name="parola" placeholder="Şifrenizi giriniz"><br><br>
+        <input type="number" name="yas"><br><br>
+        <p>Aşağıdaki renklerden bir tanesini seçiniz.</p>
+        <input type="radio" name="renk" id="renk1"><label for="renk1">Kırmızı</label>
+        <input type="radio" name="renk" id="renk2"><label for="renk2">Yeşil</label>
+        <input type="radio" name="renk" id="renk3"><label for="renk3">Mavi</label>
+        <input type="radio" name="renk" id="renk4" checked="checked"><label for="renk4">Sarı</label>
+        <input type="radio" name="renk" id="renk5"><label for="renk5">Siyah</label>
+
+        <p>Aşağıdan sevdiğiniz meyvelerden birkaçını seçiniz.</p>
+        <input type="checkbox" name="secenek1" id="sec1"><label for="sec1">Elma</label>
+        <input type="checkbox" name="secenek2" id="sec2"><label for="sec2">Armut</label>
+        <input type="checkbox" name="secenek3" id="sec3"><label for="sec3">Kiraz</label>
+        <input type="checkbox" name="secenek4" id="sec4"><label for="sec4">Mango</label>
+        <input type="checkbox" name="secenek5" id="sec5"><label for="sec5">Ananas</label>
+
+        <br><br>
+        <p>Aşağıdan bir tarih seçiniz.</p>
+        <input type="date" name="tarih">
+        <br><br>
+
+        <p>Aşağıdan tarih ve saati seçiniz.</p>
+        <input type="datetime-local" name="tarihsaat">
+        <br><br>
+
+        <p>Resim ekleyiniz</p>
+        <input type="file" name="resim">
+        <br><br>
+
+        <p>Aşağıya birşeyler yazınız.</p>
+        <textarea name="yazialani" style="width: 300px; height: 100px;" placeholder="birşeyler yazınız"></textarea>
+        <br><br>
+
+        <p>Aşağıdan bir il seçiniz.</p>
+        <select name="secim">
+            <option>Birini seçiniz</option>
+            <option value="antep">Antep</option>
+            <option value="ankara">Ankara</option>
+            <option value="yalova" selected="selected">Yalova</option>
+            <option value="bursa">Bursa</option>
+            <option value="antalya">Antalya</option>
+        </select>
+          <br><br>
+          <input type="submit" name="gonder" value="Gönder">
+          <button type="submit" name="gonder2">Gönder</button>
+          <br><br>
+          <button type="reset">Sıfırla</button>
+    </form>
+</body>
+</html>

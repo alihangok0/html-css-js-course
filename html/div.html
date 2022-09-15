@@ -1,0 +1,37 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <style type="text/css">
+        .merhaba {
+            width: 200px;
+            height: 70px;
+            border: 1px solid #f00;
+        }
+
+        #dunya {
+            color: #0f0; /* css üstten alta kodları çalıştıran bir sistem eğer !important yazarsak yazılan kodun üstüne birşey almaz olduğu gibi yazdırır */
+        }
+
+        .dunya {
+            color: #00f;
+            border: 1px solid #00f;
+        }
+        .merhaba-dunya{
+            border: 1px solid black;
+            width: 300px;
+            height: 100px;
+        }
+    </style>
+</head>
+<body>
+<div class="merhaba" id="dunya">Merhaba Dünya</div>
+<div class="merhaba">Merhaba Dünya</div>
+<div class="merhaba dunya">Deneme bir iki</div>
+<div class="merhaba-dunya">deneme iki üç</div>
+</body>
+</html>

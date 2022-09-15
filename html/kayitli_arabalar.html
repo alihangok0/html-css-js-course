@@ -1,0 +1,97 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Kiralanabilir Arabalar</title>
+
+</head>
+<body style="padding-bottom: 500px;">
+
+    <h2>Arazi Araçları</h2>
+    <div style="border: solid red;width: 310px;">
+        <ul>
+            <img src="mobius.jpg" width="250px" height="140px;"><br>
+            <li><b>MOBİUS</b></li>
+            <img src="jeep_5901.jpg" width="250px;" height="140px;"><br>
+            <li><b>JEEP</b></li>
+            <img src="toyota.jpg" width="250px;" height="160px;"><br>
+            <li>
+                <b>Toyota</b>
+            </li>
+        </ul>
+    </div>
+
+    <h2>Şehir İçi Araçlar</h2>
+    <div style="border: solid green;width: 310px;">
+        <ul>
+            <img src="renaultzeo.jpg" width="250px;" height="140px;"><br>
+            <li><b>Renault Zeo</b></li>
+            <img src="clio.jpg" width="250px;" height="140px;"><br>
+            <li><b>Renault Clio</b></li>
+            <img src="volvo.jpg" width="250px;" height="160px;"><br>
+            <li><b>Volvo S90</b></li>
+        </ul>
+    </div>
+    <br><br><br>
+    <form action="kayitli_arabalar.html" method="get">
+
+    <p><b>Kiralamak istediğiniz araç türünü aşağıdan seçiniz</b></p>
+
+    <input type="radio" name="arac" id="aa1"><label for="aa1">Arazi Aracı</label>
+    <input type="radio" name="arac" id="aa2"><label for="aa2">Şehir içi</label>
+
+    <br><br><br>
+    <p><b>Kaç adet kiralamak istiyorsunuz</b></p>
+    <input style="width: 250px;" type="number" name="adet" placeholder="Adet sayısını buraya yazınız">
+
+    <br><br><br>
+    <p><b>Arazi Araçlarımızdan kiralamak istediklerinizi seçiniz</b></p>
+    <input type="checkbox" name="aarac1" id="arazi1"><label for="arazi1">Mobius</label>
+    <input type="checkbox" name="aarac2" id="arazi2"><label for="arazi2">Jeep</label>
+    <input type="checkbox" name="aarac3" id="arazi3"><label for="arazi3">Toyota</label>
+
+    <br><br><br>
+    <p><b>Arazi Araçlarımızdan kiralamak istediklerinizi seçiniz</b></p>
+    <input type="checkbox" name="sarac1" id="sehir1"><label for="sehir1">Renault Zeo</label>
+    <input type="checkbox" name="sarac2" id="sehir2"><label for="sehir2">Renault Clio</label>
+    <input type="checkbox" name="sarac3" id="sehir3"><label for="sehir3">Volvo S90</label>
+
+    <br><br><br>
+    <p><b>Ev adresiniz</b></p>
+    <textarea name="adres" style="width: 300px; height: 300px;" placeholder="Adresinizi bu kısma giriniz"></textarea>
+
+    <br><br><br>
+    <p><b>Gerekli evrakları ekranın altında bulunan butona tıklarak seçip gönderiniz</b></p>
+    <input type="file" name="evrak">
+
+    <br><br><br>
+    <p><b>Kiralama tarihini ve saatini başlama bitiş belirterek giriniz</b></p>
+    <p>Kiralama tarihinin başlangıcı</p>
+    <input type="datetime-local" name="baslama">
+    <p>Kiralama tarihinin bitişi</p>
+    <input type="datetime-local" name="bitis">
+
+    <br><br><br>
+    <p><b>Hangi ilden kiralıyorsunuz</b></p>
+    <p>NOT: listede olmayan illere maalesef kiralama hizmeti veremiyoruz.</p>
+    <select name="il">
+        <option>Yaşadığınız ili seçiniz</option>
+        <option value="yalova">Yalova</option>
+        <option value="istanbul">İstanbul</option>
+        <option value="bursa">Bursa</option>
+        <option value="balikesir">Balıkesir</option>
+    </select>
+
+    <br><br><br>
+    <p>Gerekli yerleri doldurduysanız Aşağıda bulunan Gönder butonona tıklayınınız. Eğer bir yanlışlık oluğunu
+        düşünüyorsanız girilen bilgileri sıfırla butonuna tıklarak en baştan doldurabilirsiniz</p>
+    <button type="submit" name="yolla">Gönder</button>
+    <input type="reset" name="sil" value="Sıfırla">
+
+</form>
+
+</body>
+</html>
